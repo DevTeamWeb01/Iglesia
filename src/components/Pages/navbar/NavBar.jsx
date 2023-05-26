@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import Home from "../home/Home";
-import logo from '../../assets/iglesia-logoo.png'
 import './NavBar.css'
 const NavBar = () => {
-    return ( 
+    return (
         <>
             <div className="navbar-info">
                <div className="navbar-info-redes">
@@ -11,7 +9,6 @@ const NavBar = () => {
                 <box-icon color='#fff' type='logo' name='instagram'></box-icon>
                </div>
                <span><a style={{color:'#fff', fontFamily: 'Poppins'}} href="mailto:af01camacho@gmail.com">Email</a></span>
-               
             </div>
             <nav className="navbar">
                 <h2 style={{color: 'white', fontSize: 19, fontFamily: 'Poppins', fontWeight: 'bold'}}>Iglesia  Rios de avivamiento</h2>
@@ -20,7 +17,7 @@ const NavBar = () => {
                     <Link to='/services' className="navbar-item" > Services
                         <box-icon color='#fff' name='chevron-down'></box-icon>
                     </Link>
-                    <Link to='/services' className="navbar-item" > Nosotros
+                    <Link to='/acerca-de-nosotros' className="navbar-item" > Nosotros
                         <box-icon color='#fff' name='chevron-down'></box-icon>
                      </Link>
                      <Link to='/services' className="navbar-item" > Que hacemos
@@ -29,7 +26,6 @@ const NavBar = () => {
                      <Link to='/services' className="navbar-item" > Recursos
                         <box-icon color='#fff' name='chevron-down'></box-icon>
                      </Link>
-                
                 </ul>
                 <div>
                     <button className="navbar-btn">Realizar donaciones</button>
@@ -38,5 +34,5 @@ const NavBar = () => {
         </>
      );
 }
- 
+
 export default NavBar;
