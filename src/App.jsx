@@ -1,14 +1,12 @@
 
 import './App.css'
-import Home from './components/home/Home'
+import Home from './components/Pages/home/Home'
 import { Route, Routes } from 'react-router-dom'
 import Services from './components/services/Services'
-import NavBar from './components/Pages/navbar/NavBar'
 function App() {
 
   return (
     <>
-    <NavBar/>
        <Routes>
           <Route path='/' element={<Home/>} />
           {/* Que hacemos */}
