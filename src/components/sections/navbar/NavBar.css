@@ -54,13 +54,19 @@ img{
 .navbar-btn{
         width: 200px;
         height: 50px;
-        background-color: #FFE569;
+        background-color: #FFD95A;
         border-radius: 8px;
         border: none;
         cursor: pointer;
-        color: rgba(34, 34, 34, 0.836);
+        color:  black;
         font-family: 'Poppins';
         font-weight: 'bold';
+}
+
+.navbar-btn:hover{
+    margin-top: 10px;
+    box-shadow:  5px 5px 5px #FFF5B8;
+    color: #681313;
 }
 
 
@@ -80,4 +86,48 @@ img{
     content: '|';
     font-weight: bold;
     padding: 20px;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.navbar-list-mobile{
+    display: none;
+}
+
+
+@media (max-width: 1198px) {
+    .navbar-btn{
+        display: none;
+    }
+    .navbar-list{
+        display: none;
+    }
+    .navbar-mobile{
+        display: contents;
+        
+    }
+
+    .navbar-mobile-item{
+        padding: 1px;
+        border-radius: 4px;
+        background-color: #fefefe75;
+    }
+   
+
+    .navbar{
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .navbar-list-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        left: px;
+        background-color: #002984;
+    }
 }

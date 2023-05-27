@@ -30,7 +30,26 @@ const NavBar = () => {
                 <div>
                     <button className="navbar-btn">Realizar donaciones</button>
                 </div>
+                <div className="navbar-mobile">
+                    <Link className="navbar-mobile-item" to=''> <box-icon size='30px' color='#000' name='menu'></box-icon> </Link>
+                </div>
+                
             </nav>
+            <ul className="navbar-list-mobile">
+                    <Link to='/'  className="navbar-item" > Home </Link>
+                    <Link to='/services' className="navbar-item" > Services
+                        <box-icon color='#fff' name='chevron-down'></box-icon>
+                    </Link>
+                    <Link to='/acerca-de-nosotros' className="navbar-item" > Nosotros
+                        <box-icon color='#fff' name='chevron-down'></box-icon>
+                     </Link>
+                     <Link to='/services' className="navbar-item" > Que hacemos
+                        <box-icon color='#fff' name='chevron-down'></box-icon>
+                     </Link>
+                     <Link to='/services' className="navbar-item" > Recursos
+                        <box-icon color='#fff' name='chevron-down'></box-icon>
+                     </Link>
+                     </ul>
         </>
      );
 }
