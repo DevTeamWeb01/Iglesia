@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.hero_creencias{
+    background-image: linear-gradient(
+        0deg,
+        rgba(101, 111, 255, 0.5),
+        rgba(101, 111, 255, 0.5)
+    ),
+    url('https://mmmoficial.org/mo_includes/img/publicacion/miles-de-cristianos-se-unen-en-oracin-por-la-paz-en-diferentes-lugares-de-eeuu_mmmoficial_2020-06-14-14-26-05_8936.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    height: 500px;
+}
+
+.hero_creencias__titulo{
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Sacramento', cursive;
+}
+
+.hero_creencias__subtitulo{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+}
