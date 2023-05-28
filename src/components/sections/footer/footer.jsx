@@ -12,30 +12,38 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='footer_contacto'>
-                <div className='footer_telefono'>
-                    <span>
-                        <box-icon name='phone' type='solid' color='#ffffff' ></box-icon>
-                    </span>
-                    <p>(+57) 312 - 2664124</p>
+            <div className='footer_info'>
+                <div className='footer_contacto'>
+                    <div className='footer_telefono'>
+                        <span>
+                            <box-icon name='phone' type='solid' color='#ffffff' ></box-icon>
+                        </span>
+                        <p>(+57) 312 - 2664124</p>
+                    </div>
+
+                    <div className='footer_correo'>
+                        <span>
+                            <box-icon name='envelope' type='solid' color='#ffffff' ></box-icon>
+                        </span>
+                        <p>devteamweb01@gmai.com</p>
+                    </div>
                 </div>
 
-                <div className='footer_correo'>
-                    <span>
-                        <box-icon name='envelope' type='solid' color='#ffffff' ></box-icon>
-                    </span>
-                    <p>devteamweb01@gmai.com</p>
+                <div className='footer_ubicacion'>
+                    <div className='footer_pregunta'>
+                        <span>
+                            <box-icon name='map' type='solid' color='#ffffff' ></box-icon>
+                        </span>
+                        <h4>¿Dónde nos encontramos?</h4>
+                    </div>
+                    <div className='footer_ciudades'>
+                        <p>Barranquila - Atlántico • Ciénega - Boyacá</p>
+                    </div>
                 </div>
             </div>
 
-            <div className='footer_ubicacion'>
-                <span>
-                    <box-icon name='map' type='solid' color='#ffffff' ></box-icon>
-                </span>
-                <h4>¿Donde nos encontramos?</h4>
-                <div className='footer_lugares'>
-                    <p>Barranquila - Atlantico</p>
-                </div>
+            <div className='footer_derechos'>
+                <p>Iglesia Rios de Avivamientos para las Naciones ® Todos los Derechos Reservados. 2023 Somos una iglesia centrada en Jesucristo y su Palabra y estamos registrados como una asociación o entidad religiosa en Colombia. Diseñado y Desarrollado por: DevTeamWeb ®</p>
             </div>
         </div>
     );

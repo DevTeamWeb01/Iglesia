@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 .footer{
-    background-color: #002984;
+    background-color: #00369c;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
@@ -18,18 +18,31 @@
     font-size: 18px;
 }
 
-.footer_contacto{
+.footer_info{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 12px 40px;
-}
-
-.footer_telefono, .footer_correo{
-    display: flex;
-    gap: 10px;
 }
 
 .footer_ubicacion{
     display: flex;
-    padding: 12px 40px
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_telefono, .footer_correo, .footer_pregunta{
+    display: flex;
+    gap: 10px;
+}
+
+.footer_derechos{
+    background-color: #002984;
+    padding: 25px;
+    font-size: 15px;
+}
+
+.footer_derechos p{
+    text-align: center;
+    line-height: 2;
 }
