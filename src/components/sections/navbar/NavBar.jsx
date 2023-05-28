@@ -36,24 +36,20 @@ const NavBar = () => {
                 <h2 style={{color: 'white', fontSize: 19, fontFamily: 'Poppins', fontWeight: 'bold'}}>Iglesia  Rios de avivamiento</h2>
                 <ul className="navbar-list">
                     <Link to='/'  className="navbar-item" > Home </Link>
-                    <Link to='/services' className="navbar-item" > Services
-                        <box-icon color='#fff' name='chevron-down'></box-icon>
+                    <div onClick={removeMenuDown} className="navbar-item-down"> <Link className="navbar-item" style={{color : 'white'}} to='/'>Servicios
+                    <box-icon color='#fff' name='chevron-down'></box-icon>
                     </Link>
-                    <div onClick={removeMenuDown} className="navbar-item-down"> <Link style={{color : 'white'}} to='/'>Sobre Nosotros</Link>
                     {
                         activeMenuDown && (
                         <div className="navbar-item__down">
-                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 2</Link>
-                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 22</Link>
-                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 22</Link>
-                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 22</Link>
-                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 22</Link>
+                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="navbar-item__down-item" > Sobre nosotros </Link>
+                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="navbar-item__down-item" > Nosotros 22</Link>
+            
                         </div>
                     
                         )
                     }                    
                     </div>
-                   
                      <Link to='/services' className="navbar-item" > Que hacemos
                         <box-icon color='#fff' name='chevron-down'></box-icon>
                      </Link>

@@ -112,16 +112,33 @@ img{
 .navbar-item__down{
     
     position: absolute;
-    top: 140px;
+    top: 160px;
+    border-radius: 9px;
     color: white;
     background-color: #002984;
-    padding: 20px;
     z-index: 20;
+    width: 30%;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
     
 
 
+}
+
+.navbar-item__down-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar-item__down-item:hover{
+    background-color: #fefefe23;
+    width: 100%;
+    border-radius: 8px;
 }
 
 
