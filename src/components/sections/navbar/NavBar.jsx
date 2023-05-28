@@ -4,7 +4,7 @@ import { useState } from "react";
 const NavBar = () => {
 
     const [activeMenu, setActiveMenu] = useState(false);
-    const [activeMenuDown, setActiveMenuDown] = useState(true);
+    const [activeMenuDown, setActiveMenuDown] = useState(false);
 
     const removeMenu = () => {
         if(!activeMenu){
