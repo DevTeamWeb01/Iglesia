@@ -12,6 +12,11 @@
     right: 0;
 }
 
+.text-cookies{
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
 .wrapper-cookies::-webkit-scrollbar{
     position: fixed;
     min-height: 120px;

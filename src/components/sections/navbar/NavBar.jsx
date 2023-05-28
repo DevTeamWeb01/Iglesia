@@ -4,12 +4,21 @@ import { useState } from "react";
 const NavBar = () => {
 
     const [activeMenu, setActiveMenu] = useState(false);
+    const [activeMenuDown, setActiveMenuDown] = useState(true);
 
     const removeMenu = () => {
         if(!activeMenu){
             setActiveMenu(true);
         }else{
             setActiveMenu(false)
+        }
+    }
+
+    const removeMenuDown = () => {
+        if(!activeMenuDown){
+            setActiveMenuDown(true);
+        }else{
+            setActiveMenuDown(false)
         }
     }
     return (
@@ -21,6 +30,8 @@ const NavBar = () => {
                </div>
                <span><a style={{color:'#fff', fontFamily: 'Poppins'}} href="mailto:af01camacho@gmail.com">Email</a></span>
             </div>
+
+            {/* MENU DESKTOP */}
             <nav className="navbar">
                 <h2 style={{color: 'white', fontSize: 19, fontFamily: 'Poppins', fontWeight: 'bold'}}>Iglesia  Rios de avivamiento</h2>
                 <ul className="navbar-list">
@@ -28,9 +39,21 @@ const NavBar = () => {
                     <Link to='/services' className="navbar-item" > Services
                         <box-icon color='#fff' name='chevron-down'></box-icon>
                     </Link>
-                    <Link to='/acerca-de-nosotros' className="navbar-item" > Nosotros
-                        <box-icon color='#fff' name='chevron-down'></box-icon>
-                     </Link>
+                    <div onClick={removeMenuDown} className="navbar-item-down"> <Link style={{color : 'white'}} to='/'>Sobre Nosotros</Link>
+                    {
+                        activeMenuDown && (
+                        <div className="navbar-item__down">
+                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 2</Link>
+                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 22</Link>
+                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 22</Link>
+                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 22</Link>
+                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="" > Nosotros 22</Link>
+                        </div>
+                    
+                        )
+                    }                    
+                    </div>
+                   
                      <Link to='/services' className="navbar-item" > Que hacemos
                         <box-icon color='#fff' name='chevron-down'></box-icon>
                      </Link>
@@ -41,11 +64,14 @@ const NavBar = () => {
                 <div>
                     <button className="navbar-btn">Realizar donaciones</button>
                 </div>
+
+                {/* BOTONES MENU MOBILE */}
                 <div className="navbar-mobile">
                     <Link onClick={removeMenu} className="navbar-mobile-item" to=''> <box-icon size='30px' color='#000' name='menu'></box-icon> </Link>
                 </div>
                 
             </nav>
+            {/* MENU MOBILE */}
            { activeMenu && (
              <ul className="navbar-list-mobile">
              <Link to='/'  className="navbar-item-mobile" > Home </Link>
