@@ -122,12 +122,22 @@ img{
     }
 
     .navbar-list-mobile{
+        position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
+        justify-content: center;
         width: 100%;
-        left: px;
         background-color: #002984;
+    }
+    .navbar-item-mobile{
+    color:  var(--primary-color-navbar--text);
+    padding: 20px;
+    font-family: var(--primary-font-text);
+    display: inline-flex;
+    justify-content: center;
+    gap: 4px;
+    align-items: center;
+    width: 100%;
     }
 }
