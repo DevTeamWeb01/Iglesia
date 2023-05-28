@@ -2,15 +2,22 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #fc2525;
+    background-color: #8696FE;
     color: #fff;
     border: none;
+    display: flex;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 20px;
 }
 
+.botonUp_icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .botonUp:hover{
-    background-color: #fd4531;
+    background-color: #2016e9;
 }
