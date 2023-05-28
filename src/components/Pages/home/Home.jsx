@@ -2,7 +2,7 @@ import BotonUp from '../../Botones/botonUp/botonUp';
 import CardsInfo from '../../sections/cards/cards';
 import Cookies from '../../sections/cookies/cookies';
 import Footer from '../../sections/footer/footer';
-import HeroHome from '../../sections/heroHome/heroHome'
+import HeroHome from '../../Heros/heroHome/heroHome'
 import NavBar from '../../sections/navbar/NavBar';
 import SobreNosotros from '../../sections/sobreNosotros/sobreNosotros';
 

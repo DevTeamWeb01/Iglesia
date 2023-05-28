@@ -1,8 +1,9 @@
-
 import './App.css'
 import Home from './components/Pages/home/Home'
 import { Route, Routes } from 'react-router-dom'
 import Services from './components/services/Services'
+import Creencia from './components/Pages/creencia/creencia'
+
 function App() {
 
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path='/actividades' />
           <Route path='/misiones' />
           {/* Nosotros */}
-          <Route path='/acerca-de-nosotros' />
+          <Route path='/acerca-de-nosotros' element={<Creencia />}/>
           <Route path='/creencia' />
           <Route path='/nuestra-doctrina' />
           {/* Donde estamos */}
