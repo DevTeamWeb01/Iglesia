@@ -1,15 +1,26 @@
-import React from 'react'
+import { useState } from 'react';
 import './cookies.css'
 
 const Cookies = () => {
-    return ( 
+
+    const [activeCookie, setActiveCookie] = useState(true);
+
+    const removeCookie = () => {
+        if(activeCookie){
+            setActiveCookie(false);
+        }
+    }
+
+    return (
         <>
-            <div className="wrapper-cookies"> 
+        { activeCookie && (
+            <div className="wrapper-cookies">
                 <span className="text-cookies">Esta web utiliza cookies, puedes ver nuestra política de cookies, aquí Si continuas navegando estás aceptándola</span>
-                <button onClick={() => alert('Aceptaste las politicas')} className="btn-cookies">Aceptar</button>
+                <button onClick={removeCookie} className="btn-cookies">Aceptar</button>
             </div>
+        ) }
         </>
-     );
+    );
 }
- 
+
 export default Cookies;

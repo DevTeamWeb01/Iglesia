@@ -8,7 +8,28 @@
 
 .footer_contenido{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    padding: 20px 40px;
+}
+
+.footer_versiculo{
+    margin: 20px;
+    font-size: 18px;
+}
+
+.footer_contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 40px;
+}
+
+.footer_telefono, .footer_correo{
+    display: flex;
+    gap: 10px;
+}
+
+.footer_ubicacion{
+    display: flex;
+    padding: 12px 40px
 }

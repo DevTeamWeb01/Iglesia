@@ -1,3 +1,4 @@
+import BotonUp from '../../Botones/botonUp/botonUp';
 import CardsInfo from '../../sections/cards/cards';
 import Cookies from '../../sections/cookies/cookies';
 import Footer from '../../sections/footer/footer';
@@ -9,11 +10,13 @@ const Home = () =>{
     return(
         <>
             <NavBar />
+
             <HeroHome />
             <Cookies/>
             <SobreNosotros />
             <CardsInfo/>
-            
+            <BotonUp />
+
             <Footer />
         </>
     )

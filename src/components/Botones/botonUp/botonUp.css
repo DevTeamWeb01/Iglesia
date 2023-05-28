@@ -1,0 +1,16 @@
+.botonUp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fc2525;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.botonUp:hover{
+    background-color: #fd4531;
+}
