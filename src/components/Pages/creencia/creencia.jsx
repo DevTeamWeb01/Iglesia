@@ -1,4 +1,3 @@
-import './creencia.css';
 /* ==== Componentes ==== */
 /* ==== Secciones ==== */
 import NavBar from '../../sections/navbar/NavBar';

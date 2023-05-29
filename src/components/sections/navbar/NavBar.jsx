@@ -35,27 +35,27 @@ const NavBar = () => {
             <nav className="navbar">
                 <h2 style={{color: 'white', fontSize: 19, fontFamily: 'Poppins', fontWeight: 'bold'}}>Iglesia  Rios de avivamiento</h2>
                 <ul className="navbar-list">
-                    <Link to='/'  className="navbar-item" > Home </Link>
-                    <div onClick={removeMenuDown} className="navbar-item-down"> <Link className="navbar-item" style={{color : 'white'}} to='/'>Servicios
+                    <Link to='/'  className="navbar-item" > Inicio </Link>
+                    <div onClick={removeMenuDown} className="navbar-item-down"> <Link className="navbar-item" style={{color : 'white'}}>¿Qué hacemos?
                     <box-icon color='#fff' name='chevron-down'></box-icon>
                     </Link>
                     {
                         activeMenuDown && (
                         <div className="navbar-item__down">
-                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="navbar-item__down-item" > Sobre nosotros </Link>
-                        <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="navbar-item__down-item" > Nosotros 22</Link>
-            
+                            <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="navbar-item__down-item" >Servicios </Link>
+                            <Link style={{color: 'white', padding: 20}} to='/acerca-de-nosotros' className="navbar-item__down-item" > Actividades </Link>
                         </div>
-                    
+
                         )
-                    }                    
+                    }
                     </div>
-                     <Link to='/services' className="navbar-item" > Que hacemos
+                     <Link to='/acerca-de-nosotros' className="navbar-item" > Nosotros
                         <box-icon color='#fff' name='chevron-down'></box-icon>
                      </Link>
                      <Link to='/services' className="navbar-item" > Recursos
                         <box-icon color='#fff' name='chevron-down'></box-icon>
                      </Link>
+                     <Link to='/services' className="navbar-item">Contactos</Link>
                 </ul>
                 <div>
                     <button className="navbar-btn">Realizar donaciones</button>
@@ -65,7 +65,7 @@ const NavBar = () => {
                 <div className="navbar-mobile">
                     <Link onClick={removeMenu} className="navbar-mobile-item" to=''> <box-icon size='30px' color='#000' name='menu'></box-icon> </Link>
                 </div>
-                
+
             </nav>
             {/* MENU MOBILE */}
            { activeMenu && (
