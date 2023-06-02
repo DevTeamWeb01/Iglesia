@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 .hero_creencias{
@@ -21,7 +21,7 @@
     font-size: 60px;
     text-align: center;
     color: #fff;
-    font-family: 'Sacramento', cursive;
+    font-family: 'Lobster', cursive;
 }
 
 .hero_creencias__subtitulo{

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 .footer{
-    background-color: #00369c;
+    background-color: #141618;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
@@ -37,7 +37,7 @@
 }
 
 .footer_derechos{
-    background-color: #002984;
+    background-color: #1b1b1b;
     padding: 25px;
     font-size: 15px;
 }

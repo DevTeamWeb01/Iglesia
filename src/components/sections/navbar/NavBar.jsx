@@ -36,9 +36,10 @@ const NavBar = () => {
                 <h2 style={{color: 'white', fontSize: 19, fontFamily: 'Poppins', fontWeight: 'bold'}}>Iglesia  Rios de avivamiento</h2>
                 <ul className="navbar-list">
                     <Link to='/'  className="navbar-item" > Inicio </Link>
-                    <div onClick={removeMenuDown} className="navbar-item-down"> <Link className="navbar-item" style={{color : 'white'}}>¿Qué hacemos?
-                    <box-icon color='#fff' name='chevron-down'></box-icon>
-                    </Link>
+                    <div onClick={removeMenuDown} className="navbar-item-down">
+                        <Link className="navbar-item" >¿Qué hacemos?
+                            <box-icon color='#fff' name='chevron-down'></box-icon>
+                        </Link>
                     {
                         activeMenuDown && (
                         <div className="navbar-item__down">
@@ -58,7 +59,7 @@ const NavBar = () => {
                      <Link to='/services' className="navbar-item">Contactos</Link>
                 </ul>
                 <div>
-                    <button className="navbar-btn">Realizar donaciones</button>
+                    <button className="navbar-btn">Ofrendar</button>
                 </div>
 
                 {/* BOTONES MENU MOBILE */}
