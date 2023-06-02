@@ -4,8 +4,12 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer_contenido">
-        <div className="footer_logo">
-          <img src="/src/assets/img/logo_footer.png" alt="logo footer" />
+        <div className={(`footer_logo`, `justify-arround`)}>
+          <img
+            className="h-[100px]"
+            src="/src/assets/img/logo_footer.png"
+            alt="logo footer"
+          />
         </div>
         <div className="footer_versiculo">
           <p>
