@@ -1,7 +1,7 @@
 import './App.css'
 import Home from './components/Pages/home/Home'
 import { Route, Routes } from 'react-router-dom'
-import Services from './components/services/Services'
+import Services from './components/Pages/services/Services'
 import Creencia from './components/Pages/creencia/creencia'
 
 function App() {
