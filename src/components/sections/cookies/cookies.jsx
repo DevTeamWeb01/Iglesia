@@ -13,7 +13,7 @@ const Cookies = () => {
   return (
     <>
       {activeCookie && (
-        <div className="bg-[#1b1b1b] h-auto p-4 flex items-center fixed top-[566px] w-full justify-evenly">
+        <div className="bg-[#1b1b1b] h-auto p-4 flex items-center fixed top-[600px] w-full justify-evenly">
           <span className="text-white font-semibold text-xls">
             Esta web utiliza cookies, puedes ver nuestra política de cookies,
             aquí Si continuas navegando estás aceptándola
