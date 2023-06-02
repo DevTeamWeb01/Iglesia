@@ -1,5 +1,4 @@
-import { FaYoutube } from "react-icons/fa";
-const menu = ["Home", "Services", "Sobre Nostros"];
+const menu = ["Home", "Creencias", "Sobre Nostros"];
 const NavBar = () => {
   return (
     <div>
@@ -7,8 +6,8 @@ const NavBar = () => {
         <h2>Inglesia Rios de Avivamiento</h2>
       </div>
       <nav className="flex bg-[#1b1b1b] text-white sticky top-0 z-[98]">
-        {menu.map((items) => (
-          <ul className="p-4 hover:bg-white hover:text-black cursor-pointer">
+        {menu.map((items, index) => (
+          <ul className="p-4 hover:bg-white hover:text-black cursor-pointer" key={index}>
             <li className="flex">{items}</li>
           </ul>
         ))}

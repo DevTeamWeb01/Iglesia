@@ -15,8 +15,8 @@ function App() {
           <Route path='/actividades' />
           <Route path='/misiones' />
           {/* Nosotros */}
-          <Route path='/acerca-de-nosotros' element={<Creencia />}/>
-          <Route path='/creencia' />
+          <Route path='/acerca-de-nosotros'/>
+          <Route path='/creencia' element={<Creencia />}/>
           <Route path='/nuestra-doctrina' />
           {/* Donde estamos */}
           <Route path='/donde-estamos' />
