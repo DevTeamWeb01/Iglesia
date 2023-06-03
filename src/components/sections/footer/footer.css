@@ -46,3 +46,8 @@
     text-align: center;
     line-height: 2;
 }
+
+.footer_derechos span{
+    color: yellow;
+    margin-left: 3px;
+}

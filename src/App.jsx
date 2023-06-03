@@ -1,8 +1,8 @@
 import './App.css'
 import Home from './components/Pages/home/Home'
 import { Route, Routes } from 'react-router-dom'
-import Services from './components/Pages/services/Services'
 import Creencia from './components/Pages/creencia/creencia'
+import Ubicacion from './components/Pages/ubicacion/ubicacion'
 
 function App() {
 
@@ -11,17 +11,12 @@ function App() {
        <Routes>
           <Route path='/' element={<Home/>} />
           {/* Que hacemos */}
-          <Route path='/services' element={<Services/>} />
-          <Route path='/actividades' />
-          <Route path='/misiones' />
+          <Route path='/servicios' />
+          <Route path='/bautisos' />
           {/* Nosotros */}
-          <Route path='/acerca-de-nosotros'/>
+          <Route path='/donde-nos-encontramos' element={<Ubicacion />}/>
           <Route path='/creencia' element={<Creencia />}/>
-          <Route path='/nuestra-doctrina' />
-          {/* Donde estamos */}
-          <Route path='/donde-estamos' />
-          {/* Recursos */}
-          <Route path='/predicaciones' />
+          <Route path='/pastores' />
           {/* Eventos */}
           <Route path='/eventos' />
         </Routes>

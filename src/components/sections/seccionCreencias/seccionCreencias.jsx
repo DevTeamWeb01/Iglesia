@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './seccionCreencias.css';
 import PropTypes from 'prop-types';
+import Separador from '../separador/separador';
 
 const SeccionCreencias = ({creencias}) => {
 
@@ -20,7 +21,9 @@ const SeccionCreencias = ({creencias}) => {
 
     return (
         <>
-            <section>
+            <section className='nuestra-creencia'>
+                <h2 className='nuestra_titulo'>Nuestras creencias</h2>
+                <Separador />
                 <div className='creencias'>
                     { creencias.map((creencia) => (
                         <div className='creencia' key={creencia.id} style={{ backgroundImage: `URL(${creencia.img})` }} onClick={() => alertaDescripcion(creencia.titulo, creencia.descripcion)} >

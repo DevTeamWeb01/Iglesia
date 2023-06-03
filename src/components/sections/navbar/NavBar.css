@@ -1,183 +1,44 @@
 /* IMPORTS */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-:root{
-    --primary-color-navbar: #141618;
-    --secundary-color-navbar: #1b1b1b;
-    --primary-color-navbar--text: #fff;
-    --primary-font-text: 'Poppins';
+.img_logo{
+    height: 200px;
+    padding: 30px;
 }
 
-*{
-    text-decoration: none;
+.menu_lista{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--primary-color-navbar);
+.menu_items,
+.menu_items-dropdown {
+   position: relative;
 }
 
-img{
-    width: 100px;
-}
-
-.navbar-list{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-
-
-.navbar-item{
-    color:  var(--primary-color-navbar--text);
-    padding: 20px;
-    font-family: var(--primary-font-text);
-    display: inline-flex;
-    gap: 4px;
-    align-items: center;
-}
-
-.navbar-item:hover{
-    color:  #fffb00;
-    padding: 20px;
-    font-family: var(--primary-font-text);
-    background-color: #fefefe23;
-    border-radius: 8px;
-}
-
-.navbar-btn{
-        width: 200px;
-        height: 50px;
-        background-color: #070e20;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        color:  #fff;
-        font-family: 'Poppins';
-        font-weight: 'bold';
-}
-
-.navbar-btn:hover{
-    color: #fffb00;
-}
-
-
-.navbar-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secundary-color-navbar);
-
-}
-.navbar-info-redes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar-info-redes::after{
-    content: '|';
-    font-weight: bold;
-    padding: 20px;
-    color: black;
-}
-
-.navbar-mobile{
+.menu_items-dropdown .menu_lista-dropdown {
     display: none;
-}
-
-.navbar-list-mobile{
-    display: none;
-}
-
-.navbar-item-down{
-    color:  var(--primary-color-navbar--text);
-    padding: 20px;
-    font-family: var(--primary-font-text);
-    gap: 4px;
-    color: black;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.navbar-item__down{
     position: absolute;
-    top: 160px;
-    border-radius: 9px;
-    color: black;
-    background-color: #141618;
-    z-index: 20;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 10px;
 }
 
-.navbar-item__down-item{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
+.menu_lista-dropdown:hover {
+    display: none;
 }
 
-.navbar-item__down-item:hover{
-    background-color: #fefefe23;
-    width: 100%;
-    border-radius: 8px;
+.menu_items-dropdown {
+    display: block;
+    padding: 10px;
 }
 
-
-@media (max-width: 1198px) {
-    .navbar-btn{
-        display: none;
-    }
-    .navbar-list{
-        display: none;
-    }
-    .navbar-mobile{
-        display: contents;
-        
-    }
-
-    .navbar-mobile-item{
-        padding: 1px;
-        border-radius: 4px;
-        background-color: #fefefe75;
-    }
-   
-
-    .navbar{
-        padding: 20px;
-        justify-content: space-between;
-    }
-
-    .navbar-list-mobile{
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        background-color: #002984;
-    }
-    .navbar-item-mobile{
-    color:  var(--primary-color-navbar--text);
-    padding: 20px;
-    font-family: var(--primary-font-text);
-    display: inline-flex;
-    justify-content: center;
-    gap: 4px;
-    align-items: center;
-    width: 100%;
-    }
+.menu_items-dropdown:hover>.menu_lista-dropdown {
+    display: block;
+    background-color: #1b1b1b;
 }
+

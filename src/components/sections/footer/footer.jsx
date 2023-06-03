@@ -13,8 +13,7 @@ const Footer = () => {
         </div>
         <div className="footer_versiculo">
           <p>
-            Recibe la información más relevante de Centro de Vida Crisitana
-            directamente en tu correo electrónico.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eum dolor facere tempore beatae fugiat repudiandae, repellendus quae vel aliquam aspernatur maiores nihil esse. Sapiente et quam maxime sit rerum.
           </p>
         </div>
       </div>
@@ -25,14 +24,14 @@ const Footer = () => {
             <span>
               <box-icon name="phone" type="solid" color="#ffffff"></box-icon>
             </span>
-            <p>(+57) 312 - 2664124</p>
+            <p>(+57) 301 - 6401323</p>
           </div>
 
           <div className="footer_correo">
             <span>
               <box-icon name="envelope" type="solid" color="#ffffff"></box-icon>
             </span>
-            <p>devteamweb01@gmai.com</p>
+            <p>Pastordavidgalindo0@gmail.com</p>
           </div>
         </div>
 
@@ -44,7 +43,7 @@ const Footer = () => {
             <h4>¿Dónde nos encontramos?</h4>
           </div>
           <div className="footer_ciudades">
-            <p>Barranquila - Atlántico • Ciénega - Boyacá</p>
+            <p>Barranquila - Colombia • Ciénega - Colombia</p>
           </div>
         </div>
       </div>
@@ -52,9 +51,9 @@ const Footer = () => {
       <div className="footer_derechos">
         <p>
           Iglesia Rios de Avivamientos para las Naciones ® Todos los Derechos
-          Reservados. 2023 Somos una iglesia centrada en Jesucristo y su Palabra
+          Reservados. Somos una iglesia centrada en Jesucristo y su Palabra
           y estamos registrados como una asociación o entidad religiosa en
-          Colombia. Diseñado y Desarrollado por: DevTeamWeb ®
+          Colombia. <span> Diseñado y Desarrollado por DevTeamWeb ®</span>
         </p>
       </div>
     </div>

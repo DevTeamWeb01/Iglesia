@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.mision-vision{
+    padding: 30px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 40px;
+}
+
+.info{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 100px;
+}
+
+.mision{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.mision p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.vision{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.vision p{
+    font-size: 25px;
+    font-weight: 500;
+}
