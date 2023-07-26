@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div className="footer_versiculo">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eum dolor facere tempore beatae fugiat repudiandae, repellendus quae vel aliquam aspernatur maiores nihil esse. Sapiente et quam maxime sit rerum.
+            Iglesia Rios De Avivamiento Para Las Naciones
           </p>
         </div>
       </div>
@@ -24,14 +24,14 @@ const Footer = () => {
             <span>
               <box-icon name="phone" type="solid" color="#ffffff"></box-icon>
             </span>
-            <p>(+57) 301 - 6401323</p>
+            <p>(+57) 301 - 5939873</p>
           </div>
 
           <div className="footer_correo">
             <span>
               <box-icon name="envelope" type="solid" color="#ffffff"></box-icon>
             </span>
-            <p>Pastordavidgalindo0@gmail.com</p>
+            <p>juancarlosperezcastillo631@gmail.com</p>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ const Footer = () => {
             <h4>¿Dónde nos encontramos?</h4>
           </div>
           <div className="footer_ciudades">
-            <p>Barranquila - Colombia • Ciénega - Colombia</p>
+            <p>Barranquila - Colombia • Cra 38 No 63-10 Local 2</p>
           </div>
         </div>
       </div>
