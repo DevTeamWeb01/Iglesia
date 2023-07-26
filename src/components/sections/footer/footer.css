@@ -1,53 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-.footer{
+.footer {
     background-color: #1b1b1b;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
 
-.footer_contenido{
+.footer_contenido {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 20px 40px;
 }
 
-.footer_versiculo{
+.footer_logo {
+    margin-bottom: 20px;
+}
+
+.footer_versiculo {
     margin: 20px;
     font-size: 18px;
+    text-align: center;
 }
 
-.footer_info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 40px;
-}
-
-.footer_ubicacion{
+.footer_info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
 }
 
-.footer_telefono, .footer_correo, .footer_pregunta{
+.footer_contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contacto div {
     display: flex;
     gap: 10px;
 }
 
-.footer_derechos{
+.footer_ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer_pregunta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer_derechos {
     background-color: #141618;
     padding: 25px;
     font-size: 15px;
+    text-align: center;
 }
 
-.footer_derechos p{
-    text-align: center;
+.footer_derechos p {
     line-height: 2;
 }
 
-.footer_derechos span{
+.footer_derechos span {
     color: yellow;
     margin-left: 3px;
+}
+
+/* Media Queries  */
+@media only screen and (min-width: 768px) {
+    .footer_contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_info {
+        flex-direction: row;
+    }
+
+    .footer_ubicacion {
+        align-items: flex-start;
+        margin-top: 0;
+    }
 }

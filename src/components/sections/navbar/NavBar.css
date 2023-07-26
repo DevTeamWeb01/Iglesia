@@ -1,31 +1,42 @@
 /* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-.img_logo{
+.img_logo {
     height: 200px;
     padding: 30px;
 }
 
-.menu_lista{
+.menu_lista {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu_items,
 .menu_items-dropdown {
-   position: relative;
+    position: relative;
 }
 
 .menu_items-dropdown .menu_lista-dropdown {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 300px;
+    top: initial;
+    left: initial;
+    width: 180px;
     background-color: aqua;
     border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    z-index: 1;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.menu_lista-dropdown li {
+    padding: 10px;
 }
 
 .menu_lista-dropdown:hover {
@@ -37,8 +48,72 @@
     padding: 10px;
 }
 
-.menu_items-dropdown:hover>.menu_lista-dropdown {
+.menu_items-dropdown:hover > .menu_lista-dropdown {
     display: block;
     background-color: #1b1b1b;
 }
 
+.menu_icon {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    .menu_lista {
+        flex-direction: column;
+    }
+
+    .menu_items {
+        padding: 10px;
+    }
+
+    .menu_icon {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+        margin-right: 20px;
+    }
+
+    .menu_icon box-icon {
+        display: block;
+    }
+
+    .menu_lista.show_dropdown {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 130px;
+        left: 0;
+        right: 0;
+        background-color: #1b1b1b;
+        z-index: 999;
+        max-height: calc(100vh - 130px);
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .menu_lista.show_dropdown li {
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu_lista.show_dropdown .menu_items-ofrenda {
+        display: none;
+    }
+
+    .menu_lista.hide_list .menu_items-ofrenda {
+        display: none;
+    }
+
+    .menu_lista.hide_list .menu_items,
+    .menu_lista.hide_list .menu_items-dropdown {
+        display: none;
+    }
+
+    .menu_lista-dropdown li {
+        margin: 5px;
+    }
+}
