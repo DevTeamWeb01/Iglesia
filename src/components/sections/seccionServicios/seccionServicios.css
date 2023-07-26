@@ -1,0 +1,71 @@
+.servicios {
+    margin: 20px;
+    background-color: #0492c2;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .servicios__titulo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .servicios__tabla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .servicios__fila {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .servicios__dia {
+    flex-basis: 20%;
+    background-color: #fca048;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .servicios__hora {
+    flex-basis: 20%;
+    background-color: #fca048;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .servicios__evento {
+    flex-basis: 60%;
+    background-color: #055999;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .servicios__titulo {
+    font-size: 24px;
+  }
+
+  .servicios__fila {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .servicios__tabla {
+      grid-template-columns: 1fr;
+    }
+
+    .servicios__fila {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .servicios__dia,
+    .servicios__hora,
+    .servicios__evento {
+      flex-basis: 100%;
+    }
+  }
